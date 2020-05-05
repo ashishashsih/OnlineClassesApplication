@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_verified_user_black_24dp"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:fontFamily="@font/poppins_regular"
+                />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
+        <Button
+            android:layout_weight=".5"
+            android:layout_marginTop="1dp"
+            android:onClick="login"
+            android:padding="10dp"
+            android:id="@+id/btnLgnDi"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="Registration"
+            android:fontFamily="@font/poppins_regular"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+
+    <Button
+        android:layout_marginLeft="1dp"
+        android:layout_weight=".5"
+        android:layout_marginTop="1dp"
+        android:onClick="login"
+        android:padding="10dp"
+        android:id="@+id/btnRegistration"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:text="Login"
+        android:fontFamily="@font/poppins_regular"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+</LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

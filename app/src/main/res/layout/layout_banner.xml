@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:elevation="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardBackgroundColor="@color/colorPrimary"
+    android:id="@+id/crdBanner"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:weightSum="1">
+    <TextView
+        android:id="@+id/txtTitle"
+        android:textColor="@color/colorWhite"
+        android:textSize="35sp"
+        android:layout_weight=".3"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"/>
+    <ImageView
+        android:id="@+id/imgBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".7"
+        android:src="@drawable/ic_person"
+        android:tint="@color/colorWhite"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description"/>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnDetail"
+            android:background="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="View Detail"
+            android:fontFamily="@font/poppins_regular"
+            android:textAllCaps="false"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
